@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*============================================
+全般的なスタイル
+============================================*/
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
+body {
+  background: silver;
+  text-align: center;
+  margin: 0px auto;
+}
+
+/*============================================
+本文
+============================================*/
+.grandpa {
+  width: 96%;
+	  margin: 50px auto 0;
+	  background: white;
+}
+
+/*============================================
+ヘッダーバー
+============================================*/
+ul#welcomebar {
+	width:100%; height:100px; 	/*メインメニュー部分の幅と高さ*/
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+	background-color: black;
+}
+
+#welcomebar li a {
+	color:white;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	padding: 30px 30px;	/*上パディング*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+	font-size: 30px;
+}
+
+/*============================================
+フッターバー
+============================================*/
+ul#footerbar {
+	width:100%; height:100px; 	/*メインメニュー部分の幅と高さ*/
+	margin-top: 50px;
+	padding: 0;
+	list-style-type: none;
+	background-color: black;
+}
+#footerbar p{
+	color:white;		/*文字色*/
+	padding: 30px 30px;	/*上パディング*/
+	font-size: 15px;
+}
+
+/*============================================
+welcome画像
+============================================*/
+
+.welcome{
+  position: relative;
+  }
+
+.welcome img{
+  width: 70%;
+  }
+/*============================================
+メインメニュー
+============================================*/
+nav{
+	border-bottom: 5px solid #ccc;
+	position: relative;
+}
+nav ul{
+	position: absolute;
+	left:10%;
+	display: table;
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	text-align: center;
+}
+nav ul li{
+	display: table-cell;
+	min-width: 50px;
+}
+nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	color: black;
+}
+nav ul li.current{
+	font-weight: bold;
+	border-top: 5px solid #00B0F0;
+}
+	nav ul li.current a{
+	color: #00B0F0;
+}
+nav ul li a:hover{
+	color: #0089BB;
+	background-color: #FBFBDD;
+}
+nav ul li:hover{
+	border-top: 5px solid #F8E750;
+}
+
+/*============================================
+簡単プロフィール
+============================================*/
+
+.trim-image-to-circle1 {
+    background-image: url("img/profile1.jpg");  /* 表示する画像 */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    background-position: left top;  /* 横長画像の左上を基準に表示 */
+    background-size:cover;
+    border: 5px solid black;
+}
+
+/*-- インライン表示 --*/
+.inline-block_profile {
+    display: inline-block;      /* インラインブロック要素にする */
+    padding:  5%;             /* 余白指定 */
+    height: 50%;              /* 高さ指定 */
+}
+
+.inline-block_profile img{
+  width: 300px;
+}
+
+/*============================================
+リンク
+============================================*/
+.inline-block {
+  display: inline-block;      /* インラインブロック要素にする */
+  background: white;
+  padding:  0%;             /* 余白指定 */
+  height: 50%;              /* 高さ指定 */
+  box-shadow: 0 0 4px gray;
+  font-weight: bold;
+}
+
+.inline-block:hover {
+  box-shadow: 0 0 8px gray;
+}
+/*============================================
+本文
+============================================*/
+
+#pagebody {
+  text-align: center;
+}
+
+#pagebody h2 {
+  padding-top: 20px;
+}
