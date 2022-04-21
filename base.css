@@ -122,13 +122,14 @@ nav ul li:hover{
     background-position: left top;  /* 横長画像の左上を基準に表示 */
     background-size:cover;
     border: 5px solid black;
+		margin: 0 auto;
+		display: block;
 }
 
 /*-- インライン表示 --*/
 .inline-block_profile {
     display: inline-block;      /* インラインブロック要素にする */
-    padding:  5%;             /* 余白指定 */
-    height: 50%;              /* 高さ指定 */
+    padding: 30px 0;             /* 余白指定 */
 }
 
 .inline-block_profile img{
@@ -156,8 +157,18 @@ nav ul li:hover{
 
 #pagebody {
   text-align: center;
+  padding: 50px;
 }
 
 #pagebody h2 {
-  padding-top: 20px;
+  padding: 100px 0 30px;
+}
+
+#pagebody h3 {
+  padding: 30px;
+}
+
+#pagebody hr {
+  margin: 10px 100px;
+	size: 5px;
 }
