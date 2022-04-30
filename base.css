@@ -172,3 +172,11 @@ nav ul li:hover{
   margin: 10px 100px;
 	size: 5px;
 }
+
+#pagebody img {
+  margin: 50px;
+}
+
+#pagebody a {
+	text-decoration:none;
+}
