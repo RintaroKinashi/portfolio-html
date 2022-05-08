@@ -160,12 +160,25 @@ nav ul li:hover{
   padding: 50px;
 }
 
+#left_justified{
+	text-align: left;
+	display: inline-block;
+}
+
 #pagebody h2 {
   padding: 100px 0 30px;
 }
 
 #pagebody h3 {
   padding: 30px;
+}
+
+#pagebody h4 {
+  padding: 0.5em 30px;
+	margin: 20px 0;
+	color: #232323;
+	background: #fff8e8;
+	border-left: solid 10px #ffc06e;
 }
 
 #pagebody hr {
