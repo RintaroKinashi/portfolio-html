@@ -9,7 +9,7 @@
 body {
   background: silver;
   text-align: center;
-  margin: 0px auto;
+	/* overflow: hidden; */
 }
 
 /*============================================
@@ -30,12 +30,13 @@ ul#welcomebar {
 	padding: 0;
 	list-style-type: none;
 	background-color: black;
+	overflow: scroll;
 }
 
 #welcomebar li a {
 	color:white;		/*文字色*/
 	display:block;			/*リンク部分をブロック表示にする*/
-	padding: 30px 30px;	/*上パディング*/
+	padding: 30px;	/* 上パディング */
 	text-decoration:none;		/*リンク部分を下線無しにする*/
 	font-size: 30px;
 }
@@ -155,7 +156,16 @@ nav ul li:hover{
 
 #pagebody {
   text-align: center;
-  padding: 50px;
+  padding: 80px;
+}
+
+#pagebody img{
+  position: relative;
+  width: 70%;
+}
+
+#pagebody p{
+  padding: 5px;
 }
 
 #left_justified{
@@ -190,4 +200,25 @@ nav ul li:hover{
 
 #pagebody a {
 	text-decoration:none;
+}
+
+.single { max-width: 800px; margin: 0 auto 0px;}
+.single img{ width: 100%;}
+
+/*============================================
+レスポンシブデザイン対応
+============================================*/
+@media screen and (min-width: 479px){
+	.br-sp {display: none; }
+	}
+@media screen and ( max-width:479px )
+{
+#welcomebar li a {
+	font-size: 25px;
+}
+#pagebody {
+  padding: 20px;
+}
+
+.single { max-width: 300px;}
 }
