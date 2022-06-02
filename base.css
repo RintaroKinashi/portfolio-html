@@ -9,7 +9,7 @@
 body {
   background: silver;
   text-align: center;
-  margin: 0px auto;
+	overflow: scroll;
 }
 
 /*============================================
@@ -30,12 +30,13 @@ ul#welcomebar {
 	padding: 0;
 	list-style-type: none;
 	background-color: black;
+	overflow: scroll;
 }
 
 #welcomebar li a {
 	color:white;		/*文字色*/
 	display:block;			/*リンク部分をブロック表示にする*/
-	padding: 30px 30px;	/*上パディング*/
+	padding: 30px;	/* 上パディング */
 	text-decoration:none;		/*リンク部分を下線無しにする*/
 	font-size: 30px;
 }
@@ -155,7 +156,16 @@ nav ul li:hover{
 
 #pagebody {
   text-align: center;
-  padding: 50px;
+  padding: 80px;
+}
+
+#pagebody img{
+  position: relative;
+  width: 70%;
+}
+
+#pagebody p{
+  padding: 5px;
 }
 
 #left_justified{
@@ -190,4 +200,64 @@ nav ul li:hover{
 
 #pagebody a {
 	text-decoration:none;
+}
+
+
+/*============================================
+カールセル制御
+============================================*/
+@media screen and (min-width: 479px){
+	.br-sp {display: none; }
+	}
+
+@media screen and ( max-width:479px )
+{
+	#welcomebar li a {
+		font-size: 20px;
+	}
+
+	#pagebody {
+		padding: 30px;
+	}
+
+#pagebody p {
+	font-size: 15px;
+}
+}
+
+/*============================================
+カールセル制御
+============================================*/
+.carousel {
+  width: 600px;
+  height: calc(600px * 0.5625);
+  margin: 0 auto;
+}
+.carousel-area {
+  width: 3150px;
+  height: 100%;
+  display: flex;
+}
+.carousel-list {
+  width: 600px;
+　height: calc(600px * 0.5625);
+  margin-right: 30px;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .carousel {
+    width: 300px;
+    height: calc(300px * 0.5625);
+  }
+  .carousel-area {
+    width: 1500px;
+  }
+  .carousel-list {
+    width: 300px;
+    height: calc(300px * 0.5625);
+    margin-right: 0;
+  }
 }
