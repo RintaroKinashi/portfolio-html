@@ -202,6 +202,10 @@ nav ul li:hover{
 	text-decoration:none;
 }
 
+#pagebody .gif_picture {
+	width: 300px;
+}
+
 .single { max-width: 800px; margin: 0 auto 0px;}
 .single img{ width: 100%;}
 
