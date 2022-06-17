@@ -161,7 +161,7 @@ nav ul li:hover{
 
 #pagebody img{
   position: relative;
-  width: 70%;
+  width: 300px;
 }
 
 #pagebody p{
@@ -202,10 +202,6 @@ nav ul li:hover{
 	text-decoration:none;
 }
 
-#pagebody .gif_picture {
-	width: 300px;
-}
-
 .single { max-width: 800px; margin: 0 auto 0px;}
 .single img{ width: 100%;}
 
@@ -222,6 +218,9 @@ nav ul li:hover{
 }
 #pagebody {
   padding: 20px;
+}
+#pagebody img{
+  width: 70%;
 }
 
 .single { max-width: 300px;}
