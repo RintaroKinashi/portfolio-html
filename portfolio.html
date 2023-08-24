@@ -1,74 +1,84 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta name="viewport" content="width=device-width", initial-scale="1.0" charset="UTF-8">
-	<link rel="stylesheet" href="base.css">
-	<title>木梨凜太郎</title>
-</head>
-<body>
-	<ul id="welcomebar">
-		<li><a href="index.html">Rintaro Kinashi Portfolio</a></li>
-	</ul>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
-	</nav>
+  <head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" charset="UTF-8" />
+    <link rel="stylesheet" href="css/timerGame.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <title>木梨凜太郎</title>
+  </head>
+  <body>
+    <ul id="welcomebar">
+      <li><a href="index.html">Rintaro Kinashi Portfolio</a></li>
+    </ul>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
 
-	<div class="grandpa">
-		<div id="pagebody">
-			<h2>- 初めに -</h2>
-			<p>このページには個人開発物一覧を記載しております。</p>
-			<p>わずかでも評価いただけると幸いです。</p>
+    <div class="grandpa">
+      <div id="pagebody">
+        <h2>- はじめに -</h2>
+        <p>簡易的なアプリケーションばかりですが、わずかでも評価いただけると幸いです。</p>
+        <h2>- 目次 -</h2>
+        <div id="left_justified">
+          <ol>
+            <li><a href="#i1">TimerGame</a></li>
+            <li><a href="#i2">押すだけ勤怠くん</a></li>
+          </ol>
+        </div>
 
-			<h2>- 目次 -</h2>
-			<div id="left_justified">
-				<ol>
-					<li><a href="#i1">TimerGame</a></li>
-					<li><a href="#i2">押すだけ勤怠くん</a></li>
-				</ol>
-			</div>
+        <h2 id="i1">- TimerGame -</h2>
+        <p>ストップウォッチを用いたゲーム。誤差0.00秒を目指してみましょう。</p>
 
-			<h2 id="i1">- TimerGame -</h2>
-			<p>ストップウォッチを用いたゲーム。誤差0.00秒を目指してみましょう。</p>
-			<p>Enterキーのみで操作可能です。</p>
-			<img src="img/IMB_xAb2oC.gif" alt="タイマーゲーム" border="3" class="gif_picture">
-			<p>アプリURL：<a href= "https://timergame.herokuapp.com/" target="_blank">https://timergame.herokuapp.com/</a></p>
-			<p>Github_URL：<a href= "https://github.com/RintaroKinashi/timergame" target="_blank">https://github.com/RintaroKinashi/timergame</a></p>
-			<h3>Technology</h3>
-			<p>HTML/CSS, JavaScript</p>
-			<p>PHP 7.4.16, MySQL 5.7.32</p>
-			<p>Heroku</p>
-			<h3>comment</h3>
-			<p>自身が開発したWebアプリとして初めて公開したアプリケーションです。</p>
-			<p>フレームワークを使わずに生のJavaScript、PHPで開発を行っております。</p>
-			<p>簡単なゲームアプリではありますが、バグのない使用感、Issueを使用した開発等、評価いただけると幸いです。</p>
-			<p>ワンタイムトークンを使用したCSRF対策、htmlspecialchars関数を使用したクロスサイトスクリプティング対策等、セキュリティ面に配慮したアプリケーションとなっております。</p>
+        <div class="container">
+          <div id="message">
+            <div id="emphasis"></div>
+            ピッタリで止めてみましょう！
+            <p>3秒後にタイマーが隠れます！</p>
+          </div>
+          <div id="timer">00.00</div>
+          <div id="result">ﾔｯﾃﾐﾖｳ!<br />٩( ᐛ )و</div>
+          <div class="btns">
+            <div class="btn" id="start">スタート</div>
+            <div class="btn" id="stop">ストップ</div>
+            <div class="btn" id="reset">もう一回</div>
+          </div>
+        </div>
 
-			<h2 id="i2">- 押すだけ勤怠くん -</h2>
-			<p>前職はExcelにて勤怠管理を行っていました。</p>
-			<p>効率化できないかと本アプリを開発し、Excelを開くことなくボタン一つで勤怠管理を可能にしました。</p>
-			<img src="img/kintaikun.gif" alt="押すだけ勤怠くん" border="3" class="gif_picture">
-			<h3>Technology</h3>
-			<p>Visual Basic15, Excel</p>
-			<h3>comment</h3>
-			<p>従来「Excelを開く→勤怠入力→保存、閉じる」といった工程に約10秒程かかっていましたが、本アプリ開発後、約2秒で勤怠作業が完了できるようになりました。</p>
-			<p>勤怠表本体の展開、勤怠時刻の固定が可能な設定画面も実装済みです。</p>
-			<p>詰めの甘い箇所はありますが、他の社員にも愛用いただいているアプリケーションです。</p>
-		</div>
-	</div>
-</body>
+        <p><a href="https://github.com/RintaroKinashi/timergame" target="_blank">Github_link</a></p>
+        <h3>制作期間</h3>
+        <p>2022.3</p>
+        <h3>comment</h3>
+        <p>web業界未経験時にJavaScriptの練習の一環として作成しました。</p>
+        <p>簡単なゲームアプリですが、面白いと好評だったので記載しておきます。</p>
 
-<footer>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
-	</nav>
-	<ul id="footerbar">
-		<p href="index.html">©2022 Rintaro Kinashi Portfolio</p>
-	</ul>
-</footer>
+        <h2 id="i2">- 押すだけ勤怠くん -</h2>
+        <p>1社目の職場はExcelにて勤怠管理を行っていました。</p>
+        <p>効率化できないかと本アプリを開発し、Excelを開くことなくボタン一つで勤怠管理を可能にしました。</p>
+        <img src="img/kintaikun.gif" alt="押すだけ勤怠くん" border="3" class="gif_picture" />
+        <h3>Technology</h3>
+        <p>Visual Basic15, Excel</p>
+        <h3>制作期間</h3>
+        <p>2020.5~6</p>
+        <h3>comment</h3>
+        <p>従来「Excelを開く→勤怠入力→保存、閉じる」といった工程に約10秒程かかっていましたが、本アプリ開発後、約2秒で勤怠作業が完了できるようになりました。</p>
+        <p>詰めの甘い箇所はありますが、他の社員にも愛用いただいているアプリケーションです。</p>
+      </div>
+    </div>
+    <script src="js/timerGame.js"></script>
+  </body>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+    <ul id="footerbar">
+      <p href="index.html">©2022 Rintaro Kinashi Portfolio</p>
+    </ul>
+  </footer>
 </html>
