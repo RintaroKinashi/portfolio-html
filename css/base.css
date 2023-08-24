@@ -27,7 +27,7 @@ body {
 ============================================*/
 ul#welcomebar {
   width: 100%;
-  height: 100px; /*メインメニュー部分の幅と高さ*/
+  height: 100px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -117,7 +117,7 @@ nav ul li:hover {
 ============================================*/
 
 .trim-image-to-circle1 {
-  background-image: url("img/profile1.jpg"); /* 表示する画像 */
+  background-image: url("../img/profile1.jpg"); /* 表示する画像 */
   width: 200px;
   height: 200px;
   border-radius: 50%; /* 角丸半径を50%にする(=円形にする) */
@@ -152,6 +152,23 @@ nav ul li:hover {
 
 .inline-block:hover {
   box-shadow: 0 0 8px gray;
+}
+/*============================================
+ボタン
+============================================*/
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 30%;
+  height: 45px;
+  line-height: 45px;
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
 }
 /*============================================
 本文
