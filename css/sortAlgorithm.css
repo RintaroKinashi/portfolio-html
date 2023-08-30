@@ -1,6 +1,6 @@
 .container {
   margin: 20px auto;
-  width: 50%;
+  width: 70%;
   max-width: 500px;
   background: #fff;
   padding: 15px;
@@ -8,6 +8,7 @@
 }
 
 #message {
+  margin: 20px auto;
   font-weight: bold;
 }
 
@@ -42,6 +43,12 @@
   line-height: 120px;
   font-size: 40px;
   margin: 15px 0 15px;
+}
+
+.displaySortExplanation {
+  background: #ddd;
+  line-height: 30px;
+  text-align: left;
 }
 
 table {
