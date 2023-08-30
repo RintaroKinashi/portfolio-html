@@ -2,7 +2,7 @@
   margin: 20px auto;
   width: 50%;
   max-width: 500px;
-  background: #ddd;
+  background: #fff;
   padding: 15px;
   text-align: center;
 }
@@ -36,7 +36,7 @@
   opacity: 0.6;
 }
 
-#timer {
+.displayNumber {
   background: #ddd;
   height: 120px;
   line-height: 120px;
@@ -58,16 +58,13 @@ td {
   padding: 10px;
 }
 
+/* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and (max-width: 479px) {
-  #result {
-    margin: 15px 0 15px;
-  }
-
-  #timer {
-    background: #ddd;
-    height: 120px;
-    line-height: 120px;
-    font-size: 40px;
-    margin: 15px 0 15px;
+  .container {
+    margin: 20px auto;
+    width: 90%;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
   }
 }
