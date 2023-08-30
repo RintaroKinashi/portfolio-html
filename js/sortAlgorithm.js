@@ -62,12 +62,14 @@
   });
 
   quickSort.addEventListener("click", () => {
+    console.log("【クイックソート】");
     if (quickSort.classList.contains("inactive")) return;
     startSortAction(sortType.quick);
   });
 
   mergeSort.addEventListener("click", () => {
     if (mergeSort.classList.contains("inactive")) return;
+    console.log("【マージソート】");
     startSortAction(sortType.merge);
     // sortExplanation.innerHTML = MERGE_SORT_EXPLANATION;
   });
@@ -114,10 +116,7 @@
 
   /** マージソートを行う */
   function mergeSortAction(arr) {
-    if (arr.length <= 1) {
-      console.log("");
-      return arr;
-    }
+    if (arr.length <= 1) return arr;
 
     // 配列を中央で分割
     const middle = Math.floor(arr.length / 2);
