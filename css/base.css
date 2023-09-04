@@ -86,8 +86,10 @@ nav ul {
   text-align: center;
 }
 nav ul li {
-  display: table-cell;
-  min-width: 50px;
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  min-width: 90px;
 }
 nav ul li a {
   display: block;
